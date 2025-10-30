@@ -33,6 +33,6 @@ return {
 
     {
         "tpope/vim-fugitive",
-        cmd = { "Git", "G" },
+        cmd = { "Git", "G", "Gdiffsplit", "Gvdiffsplit" },
     },
 }
