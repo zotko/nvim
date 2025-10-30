@@ -7,7 +7,7 @@ vim.lsp.config("basedpyright", {
     settings = {
         basedpyright = {
             analysis = {
-                typeCheckingMode = "standard", -- stronger type validation for earlier bug detection
+                typeCheckingMode = "basic", -- "off", "basic", "standard", "strict"
                 diagnosticMode = "workspace", -- analyze all project files, not just open buffers
                 autoImportCompletions = true, -- surface importable symbols in completion results
                 autoSearchPaths = true, -- resolve packages by scanning common project roots

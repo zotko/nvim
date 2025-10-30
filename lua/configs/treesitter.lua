@@ -3,6 +3,7 @@ local options = {
         "bash",
         "fish",
         "lua",
+        "python",
         "luadoc",
         "markdown",
         "printf",
