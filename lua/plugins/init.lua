@@ -35,4 +35,9 @@ return {
         "tpope/vim-fugitive",
         cmd = { "Git", "G", "Gdiffsplit", "Gvdiffsplit" },
     },
+    {
+        "f-person/auto-dark-mode.nvim",
+        lazy = false,
+        opts = require "configs.auto_dark_mode",
+    },
 }
