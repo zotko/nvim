@@ -19,6 +19,10 @@ return {
             ensure_installed = {
                 "pyright",
                 "lua-language-server",
+                "html-lsp",
+                "css-lsp",
+                "stylua",
+                "prettier",
             },
         },
     },
