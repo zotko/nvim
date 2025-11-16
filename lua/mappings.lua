@@ -10,3 +10,7 @@ map("i", "jk", "<ESC>")
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
 map("n", "<leader>gd", "<cmd>Gvdiffsplit<CR>", { desc = "Git diff split" })
+
+-- Center screen on search navigation
+map("n", "n", "nzz", { desc = "Next search result (centered)" })
+map("n", "N", "Nzz", { desc = "Previous search result (centered)" })
