@@ -7,6 +7,7 @@ local options = {
         "luadoc",
         "markdown",
         "printf",
+        "sql",
         "toml",
         "vim",
         "vimdoc",

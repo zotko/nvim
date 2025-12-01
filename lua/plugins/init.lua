@@ -52,6 +52,20 @@ return {
     {
         "f-person/auto-dark-mode.nvim",
         lazy = false,
+        priority = 1000,
+        init = function()
+            -- Query macOS appearance BEFORE plugin loads to prevent flash
+            local handle = io.popen("defaults read -g AppleInterfaceStyle 2>/dev/null")
+            if handle then
+                local result = handle:read("*a")
+                handle:close()
+                if result:match("Dark") then
+                    vim.o.background = "dark"
+                else
+                    vim.o.background = "light"
+                end
+            end
+        end,
         opts = require "configs.auto_dark_mode",
     },
 }
