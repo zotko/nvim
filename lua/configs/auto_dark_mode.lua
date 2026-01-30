@@ -14,7 +14,7 @@ return {
         apply_theme("gruvbox", "dark")
     end,
     set_light_mode = function()
-        apply_theme("gruvbox_light", "light")
+        apply_theme("one_light", "light")
     end,
     update_interval = 3000,
     fallback = "dark",
